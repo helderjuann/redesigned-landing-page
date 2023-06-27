@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 2%;
+    background-image: url(../assets/bckg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    width: 100%;
+    height: 90vh; /* 90% com base no tamanho da tela */
+    /* Pode ser usado em qualquer momemento, independente de estar 
+    dentro de uma div ou não - não tem herança 
+    (única herança é o tamanho da tela)*/
+}
+
+header nav {
+    float: right;
+}
+
+nav.mobile-menu {
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/menu.png);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul {
+    opacity: 1;
+    /*display: block;*/
+}
+
+nav.mobile-menu ul {
+    opacity: 0;
+    transition: 1s;
+    /*display: none;*/
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li {
+    padding: 8px 0;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li:hover {
+    background-color: rgb(230,230,230);
+}
+
+nav.mobile-menu ul li a {
+    text-decoration: none;
+    color: black    ;
+}
+
+header .logo {
+    position: relative;
+    top: -5px;
+    float: left;
+    width: 160px;
+    height: 80px;
+    background-image: url(../assets/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+header nav.desktop-menu ul {
+    list-style-type: none;
+}
+
+header nav.desktop-menu li {
+    float: left;
+    padding: 0 20px;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+}
+
+header li a:hover {
+    font-size: 25px;
+}
+
+.call-1 {
+    max-width: 600px;
+    float: right;
+    margin: 140px 120px;
+}
+
+.call-1 h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+}
+
+.call-1 p {
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+}
+
+section.section-1 {
+    width: 100%;
+    background-color: #472562;
+    padding: 0 2%;
+    height: 400px;
+}
+
+section.section-1 .container {
+    max-width: 1000px;
+    height: calc(100% + 30px);
+}
+
+.text-section-1 {
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 65px;
+    color: white;
+    margin-top: 60px;
+    padding-left: 80px;
+}
+
+.text-section-1 h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.text-section-1 p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.text-section-1 ul {
+    list-style-position: outside;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.text-section ul li {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.device-section-1 {
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -30px;
+    height: 100%;
+    background-image: url(../assets/device.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.btn-1-text {
+    background-color: #FF703B;
+    width: 165px;
+    height: 44px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px; /* centralizar na vertical */
+    border-radius: 30px;
+}
+
+.section-2 {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+.section-2 .container {
+    max-width: 1000px;
+}
+
+.section-2 h2 {
+    font-weight: 300;
+}
+
+.section-2 p {
+    margin-top: 30px;
+    max-width: 600px;
+    display: inline-block; /* é necessário pois por padrão o display é block */
+}
+
+.section-2 h2 p {
+    color: #472663;
+}
+
+.section-2 img {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 20px 5px rgba(0,0,0,0.2);
+}
+
+.section-3 {
+    width: 100%;
+}
+
+.part-1 {
+    color: white;
+    float: left;
+    width: 50%;
+    padding:140px 0 90px 0;
+    background-color: #835FA7;
+}
+
+.part-1 h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.part-1 p {
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+.wraper-part-1 {
+    max-width: 600px;
+    float: right;
+    padding: 0 30px;
+}
+
+.part-2 {
+    float: left;
+    width: 50%;
+    padding:140px 0 90px 0;
+    background-color: white;
+}
+
+.about-author {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.author-title {
+    float: left;
+    width: 100%;
+}
+
+.wraper-author-title {
+    float: left;
+}
+
+.author-title h2 {
+    padding-right: 20px;
+    color: #232323;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.author-title p {
+    font-size: 13px;
+    color: #232323;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.author-title .author-img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -4px;
+    border-radius: 20px;
+    background-image: url(https://i.pinimg.com/originals/58/df/ae/58dfae343c0b0078546f3efda94e8cda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.author-text {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+.author-text p {
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider-bullets {
+    float: left;
+    width: 100%;
+    margin-top: 12px;
+    padding-left: 30px;
+}
+
+.slider-bullets span {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    border-radius: 8px;
+    background-color: rgb(200,200,200);
+}
+
+section.section-4 {
+    background-color: #472563;
+    padding: 100px 0;
+    position: relative;
+    top: -4px;
+}
+
+.form {
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 30px;
+}
+
+.form h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.form p {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+    padding-right: 30px;
+}
+
+.form form {
+    margin-top: 16px;
+}
+
+.form form input[type=text] {
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200,200,200);
+}
+
+.form form textarea {
+    width: 90%;
+    margin-top: 8px;
+    max-width: 480px;
+    padding: 15px 8px;
+    border: 1px solid rgb(200,200,200);
+    height: 160px;
+}
+
+.form form input[type=submit] {
+    background-color: #FF703B;
+    width: 165px;
+    height: 44px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 30px;
+    border: 0;
+}
+
+.map-wraper {
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 90px;
+}
+
+.map-wraper h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.map {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.map-wraper-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+    background-color: white;
+    border: 5px solid rgb(200,200,200);
+}
+
+.map-wraper-3 {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+footer {
+    padding: 40px 2%;
+    background-color: #192123;
+    color: white;
+    position: relative;
+    top: -10px;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+    font-size: 14px;
+}
+
+@media screen and (max-width:968px) {
+    .call-1 {
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 170px 0;
+    }
+    
+    .call-1 h2 {
+        font-size: 30px;
+        color: white;
+        font-weight: normal;
+    }
+    
+    .call-1 p {
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        padding: 40px 2%;
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+    }
+
+    header li a:hover {
+        font-size: initial;
+    }
+
+    nav.desktop-menu {
+        display: none;
+    }
+
+    nav.mobile-menu {
+        display: block;
+    }
+
+    .call-1 {
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 100px 0;
+    }
+    
+    .call-1 h2 {
+        font-size: 30px;
+        color: white;
+        font-weight: normal;
+    }
+    
+    .call-1 p {
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+    
+    section.section-1 {
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .text-section-1 {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+        position: static;
+        float: none;
+        display: inline-block;
+    }
+
+    .text-section-1 ul {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .text-section-1 ul li {
+        float: none;
+        text-align: left;
+    }
+
+    .btn-1-text {
+        display: inline-block;
+    }
+
+    .device-section-1 {
+        display: none;
+    }
+
+    .section-2 {
+        padding: 40px 2%;
+    }
+
+    section.section-4 .container {
+        text-align: center;
+    }
+
+    .map-wraper {
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+        margin-top: 40px;
+    }
+
+    .form {
+        margin-top: -20px;
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .form p {
+        display: inline-block;
+    }
+
+    .map-wraper-3 {
+        margin-top: 10px;
+        width: 80%;
+        padding-top: 80%;
+        display: inline-block;
+        max-width: none;
+        position: relative;
+    }
+
+    .map-wraper-2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .part-1 {
+        width: 100%;
+        padding: 40px 0;
+    }
+    
+    .part-2 {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .section-2 img {
+        top: 16px;
+        margin-top: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1) {
+        float: none;
+    }
+    
+    footer p:nth-of-type(2) {
+        float: none;
+        margin-top: 10px;
+    }
+}
