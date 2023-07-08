@@ -1,3 +1,3 @@
 # redesigned-landing-page
 
-Landing page praticamente completa... //Atualizar o JavaScript e implementar API
+Landing page praticamente completa... // Aplicar JavaScript e Backend
