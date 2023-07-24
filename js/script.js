@@ -8,7 +8,8 @@ $(function() {
             $(this).find('ul').slideToggle();
         })
 
-        $('body').on('click', function() {
+        $('body').on('click', function(e) {
+            e.stopPropagation();
             $('.mobile-menu').find('ul').slideUp('open');
         })
     }
