@@ -1,3 +1,5 @@
 # redesigned-landing-page
 
-Landing page praticamente completa... // Aplicar JavaScript
+Fazer as outras páginas - Continuar aplicando JavaScript no site <br><br>
+
+Melhorar API do Google Maps
