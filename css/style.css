@@ -44,15 +44,8 @@ nav.mobile-menu {
     background-size: 100% 100%;
 }
 
-nav.mobile-menu:hover ul {
-    opacity: 1;
-    /*display: block;*/
-}
-
 nav.mobile-menu ul {
-    opacity: 0;
-    transition: 1s;
-    /*display: none;*/
+    display: none;
     background-color: white;
     position: absolute;
     width: 100%;
@@ -63,9 +56,7 @@ nav.mobile-menu ul {
 }
 
 nav.mobile-menu ul li {
-    padding: 8px 0;
     transition: 0.4s;
-    border-bottom: 1px solid black;
 }
 
 nav.mobile-menu ul li:hover {
@@ -73,8 +64,11 @@ nav.mobile-menu ul li:hover {
 }
 
 nav.mobile-menu ul li a {
+    padding: 8px 0;
     text-decoration: none;
-    color: black    ;
+    color: black;
+    display: block;
+    border-bottom: 1px solid black;
 }
 
 header .logo {
@@ -102,10 +96,6 @@ header nav.desktop-menu li {
 header li a {
     text-decoration: none;
     color: white;
-}
-
-header li a:hover {
-    font-size: 25px;
 }
 
 .call-1 {
@@ -337,7 +327,7 @@ section.section-1 .container {
 
 section.section-4 {
     background-color: #472563;
-    padding: 100px 0;
+    padding: 100px 5%;
     position: relative;
     top: -4px;
 }
@@ -346,7 +336,6 @@ section.section-4 {
     float: left;
     width: 50%;
     color: white;
-    padding-left: 30px;
 }
 
 .form h2 {
@@ -481,10 +470,6 @@ footer p:nth-of-type(2) {
         width: 100%;
         height: auto;
         min-height: 90vh;
-    }
-
-    header li a:hover {
-        font-size: initial;
     }
 
     nav.desktop-menu {
