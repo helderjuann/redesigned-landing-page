@@ -29,10 +29,10 @@
         </nav><!-- menu -->
         <nav class="mobile-menu">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
             </ul><!-- lista -->
         </nav><!-- menu -->
         <div class="clear"></div><!-- clear -->
@@ -114,9 +114,9 @@
                 Duis quis elit nec dolor euismod bibendum ac vitae arcu. 
                 Maecenas nec odio id massa varius fermentum sed sit amet arcu.</p>
                 <form>
-                    <input type="text" name="nome" placeholder="Nome*" required>
-                    <input type="text" name="email" placeholder="E-mail*" required>
-                    <textarea name="mensagem" placeholder="Mensagem*" required></textarea>
+                    <input type="text" name="nome" placeholder="Nome*" autocomplete="off" required>
+                    <input type="text" name="email" placeholder="E-mail*" autocomplete="off" required>
+                    <textarea name="mensagem" placeholder="Mensagem*" autocomplete="off" required></textarea>
                     <div class="clear"></div><!-- clear -->
                     <div><input type="submit" value="Enviar"></div>
                 </form>
@@ -143,4 +143,6 @@
     </footer>
 
 </body>
-</html
+<script src="./js/jquery.js"></script>
+<script src="./js/script.js"></script>
+</html>
