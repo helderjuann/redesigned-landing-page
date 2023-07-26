@@ -46,7 +46,7 @@ nav.mobile-menu {
 
 nav.mobile-menu ul {
     display: none;
-    background-color: white;
+    background-color: rgba(131,95,167,0.4);
     position: absolute;
     width: 100%;
     left: 0;
@@ -60,15 +60,14 @@ nav.mobile-menu ul li {
 }
 
 nav.mobile-menu ul li:hover {
-    background-color: rgb(230,230,230);
+    background-color: rgba(43, 7, 80, 0.4);
 }
 
 nav.mobile-menu ul li a {
     padding: 8px 0;
     text-decoration: none;
-    color: black;
+    color: white;
     display: block;
-    border-bottom: 1px solid black;
 }
 
 header .logo {
@@ -96,6 +95,7 @@ header nav.desktop-menu li {
 header li a {
     text-decoration: none;
     color: white;
+    font-size: 18px;
 }
 
 .call-1 {
@@ -152,6 +152,7 @@ section.section-1 .container {
     list-style-position: outside;
     font-size: 15px;
     padding-left: 15px;
+    margin-top: 20px;
 }
 
 .text-section ul li {
@@ -351,7 +352,7 @@ section.section-4 {
 }
 
 .form form {
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 .form form input[type=text] {
@@ -370,7 +371,7 @@ section.section-4 {
     max-width: 480px;
     padding: 15px 8px;
     border: 1px solid rgb(200,200,200);
-    height: 160px;
+    height: 230px;
 }
 
 .form form input[type=submit] {
@@ -396,6 +397,7 @@ section.section-4 {
 .map-wraper h2 {
     font-size: 23px;
     font-weight: 300;
+    margin-bottom: 16px;
 }
 
 .map {
@@ -410,8 +412,8 @@ section.section-4 {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    padding-top: 100%;
+    width: 90%;
+    padding-top: 90%;
     background-color: white;
     border: 5px solid rgb(200,200,200);
 }
@@ -441,29 +443,167 @@ footer p:nth-of-type(2) {
     font-size: 14px;
 }
 
-@media screen and (max-width:968px) {
-    .call-1 {
-        max-width: none;
-        width: 100%;
-        text-align: center;
-        float: none;
-        margin: 170px 0;
-    }
-    
-    .call-1 h2 {
-        font-size: 30px;
-        color: white;
-        font-weight: normal;
-    }
-    
-    .call-1 p {
-        font-size: 15px;
-        color: white;
-        margin-top: 10px;
-    }
+header .container :where(.call-2, .call-2-slider) {
+    max-width: 900px;
+    margin: 180px auto;
+    text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+header .container :where(.call-2 h2, .call-2-slider h2) {
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+}
+
+header .container .call-2-slider {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    max-height: 700px;
+}
+
+header .container .call-2-slider h2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+section.services-desc {
+    width: 100%;
+    background-color: #472562;
+    padding: 0 4%;
+}
+
+section.services-desc .container {
+    max-width: 1000px;
+}
+
+section.services-desc .container .desc-text {
+    text-align: center;
+}
+
+section.services-desc .container .desc-text h2 {
+    padding: 8px;
+}
+
+section.services-desc .container .desc-text:nth-of-type(1) {
+    padding-top: 40px;
+}
+
+section.services-desc .container .desc-text:nth-of-type(3) {
+    padding-bottom: 40px;
+}
+
+section.services-desc .container .desc-text p {
+    text-align: left;
+    padding: 20px;
+}
+
+section.services-desc .container .desc-text :where(h2, p) {
+    color: white;
+}
+
+section.our-tech {
+    width: 100%;
+    padding: 0 4%;
+}
+
+section.our-tech .container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+section.our-tech .container .tech-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.our-tech .container .techs-img {
+    display: block;
+}
+
+section.our-tech .container .techs-img .img-tech {
+    text-align: center;
+}
+
+section.our-tech .container .techs-img .img-tech img {
+    width: 64px;
+    height: 64px;
+    margin: 20px;
+}
+
+section.web-tech {
+    width: 100%;
+}
+
+section.web-tech .tech-wrapper {
+    display: flex;
+    text-align: center;
+}
+
+section.web-tech .tech-wrapper .front-tech {
+    width: 50%;
+    background-color: #ccc;
+}
+
+section.web-tech .tech-wrapper .back-tech {
+    width: 50%;
+    background-color: #835FA7;
+}
+
+section.web-tech .tech-wrapper h2 {
+    margin-bottom: 10px;
+}
+
+section.web-tech .tech-wrapper p {
+    font-size: 16px;
+    text-align: left;
+}
+
+section.web-tech .tech-wrapper .back-tech h2, .back-tech p {
+    color: white;
+}
+
+section.web-tech .tech-wrapper :where(.front-tech, .back-tech) {
+    padding: 40px 4%;
+}
+
+section.about-desc {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://images.template.net/93389/white-aesthetic-background-l6pow.png);
+    animation: animate 10s linear infinite;
+}
+
+section.about-desc .container {
+    max-width: 1000px;
+    padding: 40px 4%;
+}
+
+section.about-desc .container .about-text-wrapper {
+    display: flex;
+}
+
+section.about-desc .container .about-text-wrapper .about-text {
+    width: 50%;
+}
+
+section.about-desc .container .about-text-wrapper .wrapper-side {
+    width: 50%;
+}
+
+section.about-desc .container .about-text-wrapper .about-text h2 {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1100px) {
 
     header {
         padding: 40px 2%;
@@ -576,6 +716,50 @@ footer p:nth-of-type(2) {
         height: 100%;
         padding-top: 0;
     }
+
+    header .container :where(.call-2, .call-2-slider) {
+        margin: 90px auto;
+    }
+
+    header .container :where(.call-2 h2, .call-2-slider h2) {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    header .container :where(.call-2 h2, .call-2-slider h2) {
+        font-size: 25px;
+    }
+
+    section.web-tech .tech-wrapper {
+        display: inline-block;
+    }
+
+    section.web-tech .tech-wrapper .front-tech {
+        width: 100%;
+        text-align: left;
+    }
+    
+    section.web-tech .tech-wrapper .back-tech {
+        width: 100%;
+        text-align: left;
+    }
+
+    section.about-desc .container .about-text-wrapper {
+        display: inline-block;
+    }
+    
+    section.about-desc .container .about-text-wrapper .about-text {
+        width: 100%;
+    }
+
+    section.about-desc .container .about-text-wrapper .about-text h2 {
+        margin-bottom: 4px;
+    }
+
+    section.about-desc .container .about-text-wrapper .about-text p {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -607,4 +791,27 @@ footer p:nth-of-type(2) {
         float: none;
         margin-top: 10px;
     }
+}
+
+@keyframes animate  {
+    0% {
+        background-position: left;
+    }
+
+    25% {
+        background-position: center;
+    }
+
+    50% {
+        background-position: right;
+    }
+
+    75% {
+        background-position: center;
+    }
+
+    100% {
+        background-position: left;
+    }
+
 }
