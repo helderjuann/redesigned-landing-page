@@ -255,10 +255,19 @@ section.section-1 .container {
     background-color: white;
 }
 
-.about-author {
-    float: left;
+.scroll-team {
     max-width: 600px;
     padding-left: 30px;
+    overflow: hidden;
+}
+
+.scroll-wrapper {
+    width: 100%;
+}
+
+.about-author {
+    float: left;
+    width: 100%;
 }
 
 .author-title {
@@ -286,12 +295,28 @@ section.section-1 .container {
 
 .author-title .author-img {
     float: left;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     position: relative;
-    top: -4px;
-    border-radius: 20px;
+    border-radius: 19px;
+}
+
+.author-title .one {
     background-image: url(https://i.pinimg.com/originals/58/df/ae/58dfae343c0b0078546f3efda94e8cda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.author-title .two {
+    background-image: url(https://static.wikia.nocookie.net/hunterxhunter/images/2/29/Hisoka_Morow_YC_Portrait.png/revision/latest?cb=20190123172039);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.author-title .three {
+    background-image: url(https://static.wikia.nocookie.net/hunterxhunter/images/9/9e/HxH2011_EP53_Shizuku_Portrait.png/revision/latest?cb=20230122061315);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
