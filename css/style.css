@@ -216,17 +216,21 @@ section.section-1 .container {
     width: 100%;
     border-radius: 1rem;
     box-shadow: 20px 20px 20px 5px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .section-3 {
     width: 100%;
+    position: relative;
+    top: -20px;
 }
 
 .part-1 {
     color: white;
     float: left;
     width: 50%;
-    padding:140px 0 90px 0;
+    padding: 140px 0 90px 0;
+    padding-bottom: 200px;
     background-color: #835FA7;
 }
 
@@ -334,28 +338,11 @@ section.section-1 .container {
     font-size: 15px;
 }
 
-.slider-bullets {
-    float: left;
-    width: 100%;
-    margin-top: 12px;
-    padding-left: 30px;
-}
-
-.slider-bullets span {
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    float: left;
-    margin-right: 8px;
-    border-radius: 8px;
-    background-color: rgb(200,200,200);
-}
-
 section.section-4 {
     background-color: #472563;
-    padding: 100px 5%;
+    padding: 120px 5%;
     position: relative;
-    top: -4px;
+    top: -100px;
 }
 
 .form {
@@ -455,7 +442,7 @@ footer {
     background-color: #192123;
     color: white;
     position: relative;
-    top: -10px;
+    top: -100px;
 }
 
 footer p:nth-of-type(1) {
@@ -485,17 +472,6 @@ header .container .call-2-slider {
     width: 100%;
     height: 80%;
     max-height: 700px;
-}
-
-header .container .call-2-slider h2 {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    display: none;
 }
 
 section.services-desc {
@@ -569,6 +545,7 @@ section.web-tech {
 section.web-tech .tech-wrapper {
     display: flex;
     text-align: center;
+    margin-bottom: 90px;
 }
 
 section.web-tech .tech-wrapper .front-tech {
@@ -614,6 +591,7 @@ section.about-desc .container {
 
 section.about-desc .container .about-text-wrapper {
     display: flex;
+    margin-bottom: 100px;
 }
 
 section.about-desc .container .about-text-wrapper .about-text {
@@ -626,6 +604,44 @@ section.about-desc .container .about-text-wrapper .wrapper-side {
 
 section.about-desc .container .about-text-wrapper .about-text h2 {
     margin-bottom: 8px;
+}
+
+/* */
+
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background-color: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slick-dotted button:focus {
+    outline: 0;
+}
+
+li.slick-active button {
+    background-color: #835FA7;
+    color: #835FA7;
+}
+
+.slick-slide:focus {
+    outline: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -702,8 +718,19 @@ section.about-desc .container .about-text-wrapper .about-text h2 {
         padding: 40px 2%;
     }
 
+    section.section-4 {
+        background-color: #472563;
+        padding: 100px 5%;
+        position: relative;
+        top: -50px;
+    }
+
     section.section-4 .container {
         text-align: center;
+    }
+
+    section.web-tech .tech-wrapper {
+        margin-bottom: 50px;
     }
 
     .map-wraper {
