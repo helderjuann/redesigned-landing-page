@@ -29,7 +29,7 @@ $(function() {
                     indexWord = 0;
                     indexChar = 0;
                 }
-            },400);
+            },100);
         }
     }
     
