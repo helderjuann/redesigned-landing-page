@@ -2,7 +2,7 @@
 
 Página praticamente completa, faltam pequenos ajustes.
 
-Obs. As imagens não carregam no slide por conta dos assets locais.<br>
-Eu conseguiria resolver isso se utilizasse por link ou base64, mas optei por deixar assim mesmo.
+Obs. Preciso arrumar algumas coisas geradas por javascript <br>
+-> Centralizar e redimensionar algumas coisas no mobile
 
 Deploy -> https://helderjuann.github.io/redesigned-landing-page/
