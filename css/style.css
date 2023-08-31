@@ -18,6 +18,14 @@ html, body {
     margin: 0 auto;
 }
 
+.selected {
+    color: #5fb382 !important;
+}
+
+.selected:hover {
+    color: #0e946c !important;
+}
+
 header {
     padding: 40px 2%;
     background-image: url(../assets/bckg.png);
@@ -96,6 +104,10 @@ header li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+}
+
+header li a:hover {
+    color: #ccc;
 }
 
 .call-1 {
@@ -384,6 +396,7 @@ section.section-4 {
     padding: 15px 8px;
     border: 1px solid rgb(200,200,200);
     height: 230px;
+    resize: none;
 }
 
 .form form input[type=submit] {
@@ -397,6 +410,33 @@ section.section-4 {
     text-align: center;
     border-radius: 30px;
     border: 0;
+}
+
+.form form input[type=text]:focus,
+.form form textarea:focus {
+    outline: 0;
+}
+
+.form form span {
+    color: white;
+    display: block;
+}
+
+.form .box-success {
+    text-align: center;
+    position: relative;
+    display: none;
+    left: 80px;
+    top: 20px;
+    padding: 10px;
+    background-color: #5fb382;
+    width: 80%;
+}
+
+.form .box-success p {
+    display: inline-block;
+    position: relative;
+    left: 20px;
 }
 
 .map-wraper {
@@ -864,6 +904,15 @@ li.slick-active button {
 
     header .container :where(.about-slider, .services-slider) input {
         font-size: 25px;
+    }
+
+    .form .box-success {
+        position: relative;
+        left: 0;
+        display: none;
+        padding: 10px;
+        background-color: #5fb382;
+        width: 80%;
     }
 }
 
