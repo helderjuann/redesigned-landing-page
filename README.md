@@ -2,7 +2,6 @@
 
 Página praticamente completa, faltam pequenos ajustes.
 
-Obs. Preciso arrumar algumas coisas geradas por javascript <br>
--> Centralizar e redimensionar algumas coisas no mobile
+Obs. Preciso arrumar algumas coisas geradas por javascript
 
 Deploy -> https://helderjuann.github.io/redesigned-landing-page/
